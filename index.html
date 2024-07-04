@@ -21,9 +21,14 @@
             position: relative;
         }
          nav {
-            position: absolute;
+            position: fixed;
             top: 10px;
             left: 10px;
+            background-color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000; /* Ensure it stays on top */
         }
         nav ul {
             list-style: none;
@@ -43,22 +48,15 @@
         nav ul li a:hover {
             text-decoration: underline;
         }
-
-        header {
-            background: #a6bddb;
-            color: white;
-            text-align: left;
-            padding: 1em 0;
-            border-top: 0.5px solid #d9d9d9; /* Add a line before the footer */
-        }
-        header h1 {
-            font-size: 2.5em; /* Change this to your desired font size */
-            font-weight: normal; /* Ensures the font is not bold */
-        }
         .icons {
-            position: absolute;
+            position: fixed;
             top: 10px;
             right: 10px;
+            background-color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000; /* Ensure it stays on top */
         }
         .icons a {
             color: white;
@@ -76,6 +74,24 @@
             width: auto; /* Maintain aspect ratio */
             vertical-align: middle; /* Align image vertically */
         }
+
+        header {
+            background: #a6bddb;
+            color: white;
+            text-align: left;
+            padding: 1em 0;
+            border-top: 0.5px solid #d9d9d9; /* Add a line before the footer */
+        }
+        header h1 {
+            font-size: 2.5em; /* Change this to your desired font size */
+            font-weight: normal; /* Ensures the font is not bold */
+        }
+        .pale-line {
+            width: 100%;
+            border-bottom: 1px solid #dcdcdc; /* Pale line color */
+            margin-top: 50px; /* Space below the floating elements */
+        }
+        
         main {
             padding: 20px;
         }
