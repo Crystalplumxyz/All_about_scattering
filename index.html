@@ -20,10 +20,13 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Shadow for a slight elevation effect */
             position: relative; /* Ensure container is positioned relative for absolute positioning */
         }
-        nav {
-            position: absolute;
-            top: 10px;
-            left: 10px;
+       nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            z-index: 1000;
         }
         nav ul {
             list-style: none;
