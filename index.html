@@ -20,6 +20,28 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Shadow for a slight elevation effect */
             position: relative;
         }
+        nav {
+            background: #3498db; /* Change this to your desired navigation background color */
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
         header {
             background: #a6bddb;
             color: white;
@@ -65,6 +87,14 @@
 </head>
 <body>
     <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i></a>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Publications</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
         <header>
             <h1>Tianyu Li</h1>
             <div class="icons">
