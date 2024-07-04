@@ -27,21 +27,12 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px;
-         nav {
-            position: fixed;
-            top: 10px;
-            left: 7.5px;
-            background-color: #a6bddb;
-            padding: 5px 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            z-index: 1000; /* Ensure it stays on top */
-        }
-        nav ul {
+         nav ul {
             list-style: none;
             margin: 0;
             padding: 0;
-            text-align: center;
+            display: flex;
+            gap: 15px;
         }
         nav ul li {
             display: inline;
@@ -55,16 +46,7 @@
         nav ul li a:hover {
             text-decoration: underline;
         }
-        .icons {
-            position: fixed;
-            top: 10px;
-            right: 7.5px;
-            background-color: #a6bddb;
-            padding: 5px 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            z-index: 1000; /* Ensure it stays on top */
-        }
+     
         .icons a {
             color: white;
             margin-left: 15px;
