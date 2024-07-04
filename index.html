@@ -12,15 +12,21 @@
             padding: 0;
             background-color: #a6bddb; /* Optional: Background color to highlight centered content */
         }
-        .container {
+        .header-container {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .header-content {
             max-width: 960px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #a6bddb; /* Optional: Background color for content area */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Shadow for a slight elevation effect */
-            position: relative; /* Ensure container is positioned relative for absolute positioning */
-            margin-top: 80px; /* Add margin to prevent content overlap with fixed elements */
-        }
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
          nav {
             position: fixed;
             top: 10px;
@@ -74,6 +80,15 @@
             height: 22px; /* Adjust the height as needed */
             width: auto; /* Maintain aspect ratio */
             vertical-align: middle; /* Align image vertically */
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #a6bddb; /* Background color for the content area */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Shadow for a slight elevation effect */
+            position: relative; /* Ensure container is positioned relative for absolute positioning */
+            margin-top: 80px; /* Add margin to prevent content overlap with fixed elements */
         }
 
         header {
