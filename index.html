@@ -10,17 +10,17 @@
             font-family: 'myriad-pro', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #a6bddb; /* Optional: Background color to highlight centered content */
+            background-color: #a6bddb;
         }
         .container {
             max-width: 960px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #a6bddb; /* Background color for the content area */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Shadow for a slight elevation effect */
-            position: relative; /* Ensure container is positioned relative for absolute positioning */
+            background-color: #a6bddb;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
-       nav {
+        nav {
             position: fixed;
             top: 0;
             left: 0;
@@ -45,7 +45,6 @@
         nav ul li a:hover {
             text-decoration: underline;
         }
-        
         .icons {
             position: absolute;
             top: 10px;
@@ -58,41 +57,40 @@
             font-size: 1.5em;
         }
         .icons a img {
-            height: 30px; /* Adjust the height as needed */
-            width: auto; /* Maintain aspect ratio */
-            vertical-align: middle; /* Align image vertically */
+            height: 30px;
+            width: auto;
+            vertical-align: middle;
         }
         .icons a svg {
-            height: 22px; /* Adjust the height as needed */
-            width: auto; /* Maintain aspect ratio */
-            vertical-align: middle; /* Align image vertically */
+            height: 22px;
+            width: auto;
+            vertical-align: middle;
         }
-
-
         header {
             text-align: left;
             padding: 1em 0;
         }
         header h1 {
-            font-size: 2em; /* Change this to your desired font size */
-            font-weight: normal; /* Ensures the font is not bold */
-            color: white; /* Header font color */
+            font-size: 2em;
+            font-weight: normal;
+            color: white;
         }
         .pale-line {
             width: 100%;
-            border-bottom: 1px solid #dcdcdc; /* Pale line color */
-            margin-top: 50px; /* Space below the floating elements */
+            border-bottom: 1px solid #dcdcdc;
+            margin-top: 50px;
         }
-        
         main {
             padding: 20px;
+            padding-top: 70px; /* Adjust based on the height of your navigation bar */
         }
         footer {
             background:#a6bddb;
             color: white;
             text-align: center;
             padding: 0.1em 0;
-            border-top: 0.5px solid #ffffff; /* Add a line before the footer */
+            border-top: 0.5px solid #ffffff;
+            position: relative;
         }
     </style>
 </head>
@@ -100,12 +98,12 @@
     <div class="container">
         <nav>
             <ul>
-                <li><a href="#"><i class="fa-solid fa-house" title="Home page"></i></a>
+                <li><a href="#"><i class="fa-solid fa-house" title="Home page"></i></a></li>
                 <li><a href="#">About Me</a></li>
                 <li><a href="#">Publications</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Gallery</a></li>
-                <li><a href="#"><i class="fa-solid fa-screwdriver-wrench" title="Useful research resources"></i></a>
+                <li><a href="#"><i class="fa-solid fa-screwdriver-wrench" title="Useful research resources"></i></a></li>
             </ul>
         </nav>
         <header>
@@ -113,31 +111,17 @@
             <div class="icons">
                 <a href="mailto:tianyuli@ucsb.edu" title="tianyuli@ucsb.edu"><i class="fa-solid fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/tianyu-li-164545165/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                
                 <a href="https://x.com/Tianyu_Crystal" target="_blank" title="Twitter/X"><i class="fa-brands fa-twitter"></i></a>
                 <a href="https://scholar.google.com/citations?user=3i3BkJUAAAAJ&hl=en" title="Google Scholar">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f1f2f3" d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3c33.6 0 64.6 11.1 89.6 29.9c9.1 6.9 17.4 14.7 24.8 23.5c5.6 6.6 10.6 13.8 15 21.3c2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z"/></svg></i></a>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f1f2f3" d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3c33.6 0 64.6 11.1 89.6 29.9c9.1 6.9 17.4 14.7 24.8 23.5c5.6 6.6 10.6 13.8 15 21.3c2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z"/></svg>
+                </a>
                 <a href="https://www.researchgate.net/profile/Tianyu-Li-25" target="_blank" title="ResearchGate"><i class="fa-brands fa-researchgate"></i></a>
                 <a href="https://orcid.org/0000-0003-0142-7252" target="_blank" title="Ocid"><i class="fa-brands fa-orcid"></i></a>
-                
             </div>
         </header>
         <main>
             <h2>About Me</h2>
-            <p>In my study, I utilize various chemical methods to achieve delithiated or lithiated stages of DRX cathodes to reveal the thermodynamic driving forces of phase transformation. This strategy allows me to isolate different potential factors contributing to phase transformations within the battery cell. By comparing structural evolution during thermal relaxation and battery cycling, I gain fundamental insights into the mechanisms underlying these transformations.
-
-I am particularly interested in understanding the atomic structural behavior at both long-range and atomic scales. Diffraction techniques, such as neutron and X-ray scattering, are pivotal in revealing the long-range atomic structure of the transformed phases. Additionally, techniques like Pair Distribution Function (PDF) analysis and solid-state NMR enable tracking changes in the local environment. Furthermore, I employ in-situ and operando X-ray and neutron scattering to monitor structural evolution in real time. These techniques help me investigate both long-range and local structural changes, providing a comprehensive understanding of the kinetics and potential intermediate phases during the transformation process.
-
-Another important perspective of my research is controlling phase transformation behavior through structural modification and then understanding how these changes impact battery performance. My research efforts involve the synthesis of Mn-based DRX with different Mn content and various hypervalent d0 ions. Through scattering and NMR characterization, I am able to understand the long-range and local structural differences influenced by these modifications. This approach is crucial for developing strategies to enhance the stability, efficiency, and longevity of Mn-based DRX cathode materials, ultimately leading to improved Li-ion batteries.
-            In my study, I utilize various chemical methods to achieve delithiated or lithiated stages of DRX cathodes to reveal the thermodynamic driving forces of phase transformation. This strategy allows me to isolate different potential factors contributing to phase transformations within the battery cell. By comparing structural evolution during thermal relaxation and battery cycling, I gain fundamental insights into the mechanisms underlying these transformations.
-
-I am particularly interested in understanding the atomic structural behavior at both long-range and atomic scales. Diffraction techniques, such as neutron and X-ray scattering, are pivotal in revealing the long-range atomic structure of the transformed phases. Additionally, techniques like Pair Distribution Function (PDF) analysis and solid-state NMR enable tracking changes in the local environment. Furthermore, I employ in-situ and operando X-ray and neutron scattering to monitor structural evolution in real time. These techniques help me investigate both long-range and local structural changes, providing a comprehensive understanding of the kinetics and potential intermediate phases during the transformation process.
-
-Another important perspective of my research is controlling phase transformation behavior through structural modification and then understanding how these changes impact battery performance. My research efforts involve the synthesis of Mn-based DRX with different Mn content and various hypervalent d0 ions. Through scattering and NMR characterization, I am able to understand the long-range and local structural differences influenced by these modifications. This approach is crucial for developing strategies to enhance the stability, efficiency, and longevity of Mn-based DRX cathode materials, ultimately leading to improved Li-ion batteries.In my study, I utilize various chemical methods to achieve delithiated or lithiated stages of DRX cathodes to reveal the thermodynamic driving forces of phase transformation. This strategy allows me to isolate different potential factors contributing to phase transformations within the battery cell. By comparing structural evolution during thermal relaxation and battery cycling, I gain fundamental insights into the mechanisms underlying these transformations.
-
-I am particularly interested in understanding the atomic structural behavior at both long-range and atomic scales. Diffraction techniques, such as neutron and X-ray scattering, are pivotal in revealing the long-range atomic structure of the transformed phases. Additionally, techniques like Pair Distribution Function (PDF) analysis and solid-state NMR enable tracking changes in the local environment. Furthermore, I employ in-situ and operando X-ray and neutron scattering to monitor structural evolution in real time. These techniques help me investigate both long-range and local structural changes, providing a comprehensive understanding of the kinetics and potential intermediate phases during the transformation process.
-
-Another important perspective of my research is controlling phase transformation behavior through structural modification and then understanding how these changes impact battery performance. My research efforts involve the synthesis of Mn-based DRX with different Mn content and various hypervalent d0 ions. Through scattering and NMR characterization, I am able to understand the long-range and local structural differences influenced by these modifications. This approach is crucial for developing strategies to enhance the stability, efficiency, and longevity of Mn-based DRX cathode materials, ultimately leading to improved Li-ion batteries.</p>
+            <p>n my study, I utilize various chemical methods to achieve delithiated or lithiated stages of DRX cathodes to reveal the thermodynamic driving forces of phase transformation. This strategy allows me to isolate different potential factors contributing to phase transformations within the battery cell. By comparing structural evolution during thermal relaxation and battery cycling, I gain fundamental insights into the mechanisms underlying these transformations. I am particularly interested in understanding the atomic structural behavior at both long-range and atomic scales. Diffraction techniques, such as neutron and X-ray scattering, are pivotal in revealing the long-range atomic structure of the transformed phases. Additionally, techniques like Pair Distribution Function (PDF) analysis and solid-state NMR enable tracking changes in the local environment. Furthermore, I employ in-situ and operando X-ray and neutron scattering to monitor structural evolution in real time. These techniques help me investigate both long-range and local structural changes, providing a comprehensive understanding of the kinetics and potential intermediate phases during the transformation process. Another important perspective of my research is controlling phase transformation behavior through structural modification and then understanding how these changes impact battery performance. My research efforts involve the synthesis of Mn-based DRX with different Mn content and various hypervalent d0 ions. Through scattering and NMR characterization, I am able to understand the long-range and local structural differences influenced by these modifications. This approach is crucial for developing strategies to enhance the stability, efficiency, and longevity of Mn-based DRX cathode materials, ultimately leading to improved Li-ion batteries. In my study, I utilize various chemical methods to achieve delithiated or lithiated stages of DRX cathodes to reveal the thermodynamic driving forces of phase transformation. This strategy allows me to isolate different potential factors contributing to phase transformations within the battery cell. By comparing structural evolution during thermal relaxation and battery cycling, I gain fundamental insights into the mechanisms underlying these transformations. I am particularly interested in understanding the atomic structural behavior at both long-range and atomic scales. Diffraction techniques, such as neutron and X-ray scattering, are pivotal in revealing the long-range atomic structure of the transformed phases. Additionally, techniques like Pair Distribution Function (PDF) analysis and solid-state NMR enable tracking changes in the local environment. Furthermore, I employ in-situ and operando X-ray and neutron scattering to monitor structural evolution in real time. These techniques help me investigate both long-range and local structural changes, providing a comprehensive understanding of the kinetics and potential intermediate phases during the transformation process. Another important perspective of my research is controlling phase transformation behavior through structural modification and then understanding how these changes impact battery performance. My research efforts involve the synthesis of Mn-based DRX with different Mn content and various hypervalent d0 ions. Through scattering and NMR characterization, I am able to understand the long-range and local structural differences influenced by these modifications. This approach is crucial for developing strategies to enhance the stability, efficiency, and longevity of Mn-based DRX cathode materials, ultimately leading to improved Li-ion batteries.In my study, I utilize various chemical methods to achieve delithiated or lithiated stages of DRX cathodes to reveal the thermodynamic driving forces of phase transformation. This strategy allows me to isolate different potential factors contributing to phase transformations within the battery cell. By comparing structural evolution during thermal relaxation and battery cycling, I gain fundamental insights into the mechanisms underlying these transformations. I am particularly interested in understanding the atomic structural behavior at both long-range and atomic scales. Diffraction techniques, such as neutron and X-ray scattering, are pivotal in revealing the long-range atomic structure of the transformed phases. Additionally, techniques like Pair Distribution Function (PDF) analysis and solid-state NMR enable tracking changes in the local environment. Furthermore, I employ in-situ and operando X-ray and neutron scattering to monitor structural evolution in real time. These techniques help me investigate both long-range and local structural changes, providing a comprehensive understanding of the kinetics and potential intermediate phases during the transformation process. Another important perspective of my research is controlling phase transformation behavior through structural modification and then understanding how these changes impact battery performance. My research efforts involve the synthesis of Mn-based DRX with different Mn content and various hypervalent d0 ions. Through scattering and NMR characterization, I am able to understand the long-range and local structural differences influenced by these modifications. This approach is crucial for developing strategies to enhance the stability, efficiency, and longevity of Mn-based DRX cathode materials, ultimately leading to improved Li-ion batteries..</p>
             <h2>Projects</h2>
             <ul>
                 <li><a href="#">Project 1</a></li>
@@ -149,5 +133,14 @@ Another important perspective of my research is controlling phase transformation
             <p>&copy; 2024 Tianyu Li. All rights reserved. tianyuli@ucsb.edu</p>
         </footer>
     </div>
+
+    <!-- Optional: jQuery for dynamic adjustments -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var navHeight = $('nav').outerHeight();
+            $('main').css('padding-top', navHeight + 'px');
+        });
+    </script>
 </body>
 </html>
