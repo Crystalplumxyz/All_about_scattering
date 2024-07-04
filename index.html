@@ -3,30 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Centered Content Website</title>
+    <link rel="stylesheet" href="https://use.typekit.net/xxxxxxx.css"> <!-- Replace with your Adobe Fonts link -->
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #4CAF50; color: white; text-align: center; padding: 1em 0; }
-        main { padding: 20px; }
-        footer { background: #333; color: white; text-align: center; padding: 1em 0; position: fixed; width: 100%; bottom: 0; }
+        body {
+            font-family: 'myriad-pro', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Optional: Background color to highlight centered content */
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff; /* Optional: Background color for content area */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Shadow for a slight elevation effect */
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Personal Website</h1>
-    </header>
-    <main>
-        <h2>About Me</h2>
-        <p>Hi, I'm [Your Name]. I am a [Your Profession] who loves [Your Interests].</p>
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="#">Project 1</a></li>
-            <li><a href="#">Project 2</a></li>
-            <li><a href="#">Project 3</a></li>
-        </ul>
-    </main>
-    <footer>
-        <p>&copy; 2024 Tianyu Li. All rights reserved.</p>
-    </footer>
+    <div class="container">
+        <header>
+            <h1>Welcome to My Website with Myriad Pro</h1>
+        </header>
+        <main>
+            <h2>About Me</h2>
+            <p>Hi, I'm [Your Name]. I am a [Your Profession] who loves [Your Interests].</p>
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">Project 1</a></li>
+                <li><a href="#">Project 2</a></li>
+                <li><a href="#">Project 3</a></li>
+            </ul>
+        </main>
+        <footer>
+            <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
+
