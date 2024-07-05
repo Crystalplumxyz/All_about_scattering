@@ -3,10 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Tianyu Li Academic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'myriad-pro', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:  #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .sticky-header {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            z-index: 1000;
+            width: 100%;
+            box-sizing: border-box;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Added shadow */
+        }
+        .header-wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .icons a {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+        .icons a img, .icons a svg {
+            height: 22px;
+            width: auto;
+            vertical-align: middle;
+        }
+        header {
+            text-align: left;
+            padding: 1em 0;
+        }
+        header h1 {
+            font-size: 2em;
+            font-weight: normal;
+            color: white;
+        }
+        
+        
+        main {
+            background: #333;
+            color: white;
+            padding: 20px;
+            padding-top: 70px;
+            
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 0.1em 0;
+            border-top: 0.5px solid #ffffff;
+            position: relative;
+        }
+
+        /* Media queries for responsive design */
+        @media only screen and (max-width: 768px) {
+            .header-wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul {
+                flex-direction: row; /* Ensure menu items are in a row */
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 10px; /* Adjust margin for spacing */
+            }
+
+            nav ul li a {
+                font-size: 0.85em; /* Decrease font size */
+            }
+
+            .icons {
+                margin-top: 10px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple website hosted on GitHub Pages.</p>
+
+    <div class="sticky-header">
+        <div class="header-wrapper">
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-house" title="Home page"></i></a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Publications</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#"><i class="fa-solid fa-screwdriver-wrench" title="Useful research resources"></i></a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="mailto:tianyuli@ucsb.edu" title="tianyuli@ucsb.edu"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/tianyu-li-164545165/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://x.com/Tianyu_Crystal" target="_blank" title="Twitter/X"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://scholar.google.com/citations?user=3i3BkJUAAAAJ&hl=en" title="Google Scholar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f1f2f3" d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3c33.6 0 64.6 11.1 89.6 29.9c9.1 6.9 17.4 14.7 24.8 23.5c5.6 6.6 10.6 13.8 15 21.3c2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z"/></svg>
+                </a>
+                <a href="https://www.researchgate.com/profile/Tianyu-Li-25" target="_blank" title="ResearchGate"><i class="fa-brands fa-researchgate"></i></a>
+                <a href="https://orcid.org/0000-0003-0142-7252" target="_blank" title="Ocid"><i class="fa-brands fa-orcid"></i></a>
+            </div>
+        </div>
+    </div>
+    
+        
+    <div class="container">
+        
+        <header>
+            <h1>Tianyu Li</h1>
+        </header>
+        <main>
+            <h2>About Me</h2>
+            <p>CV</p>
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">Project 1</a></li>
+                <li><a href="#">Project 2</a></li>
+                <li><a href="#">Project 3</a></li>
+            </ul>
+        </main>
+        <footer>
+            <p>&copy; 2024 Tianyu Li. All rights reserved. tianyuli@ucsb.edu</p>
+        </footer>
+    </div>
 </body>
 </html>
+
