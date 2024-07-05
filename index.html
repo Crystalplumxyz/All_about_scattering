@@ -38,7 +38,7 @@
         }
         .image {
             flex: 1;
-            max-width: 489px;
+            max-width: 300px;
             margin-left: 20px;
         }
         img {
@@ -61,12 +61,15 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
         }
         nav ul {
             list-style: none;
             margin: 0;
             padding: 0;
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         nav ul li {
             margin: 0 15px;
@@ -79,9 +82,14 @@
         nav ul li a:hover {
             text-decoration: underline;
         }
+        .icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
         .icons a {
             color: white;
-            margin-left: 15px;
+            margin: 5px;
             text-decoration: none;
             font-size: 1.5em;
         }
@@ -115,7 +123,6 @@
             .header-wrapper {
                 flex-direction: row;
                 flex-wrap: wrap;
-                align-items: center;
             }
             .content {
                 flex-direction: column;
@@ -125,6 +132,7 @@
                 max-width: 100%;
                 padding-right: 0;
                 margin-left: 0;
+            }
             nav ul {
                 flex-direction: row;
                 justify-content: center;
@@ -185,22 +193,17 @@
         <main>
             <div class="content">
                 <div class="text">
-                    <p>I am currently a postodc researcher in the Clément group and Seshadri gorup UC Santa Barbara. My research involves apllying scattering and NMR techiques to understand the phase transformation behaviors of Li-ion cathode materials. I am especially interested in Mn-based Cation Disordered Rock salt cathode materials. I got my Ph.D in solid state chemistry and materials chemistry with Efrain E. Rdorguez. I am big fan of all kinds of scattering, and my favorite equation is Fourier transform >< </p>
-                    <p>I love nature and food. I travel all over the worlld to hike. I enjoy gardening and cooking when I am free. BTW I am a big fan of Pokemon :). </p>
+                    <p>I am currently a postdoc researcher in the Clément group and Seshadri group at UC Santa Barbara. My research involves applying scattering and NMR techniques to understand the phase transformation behaviors of Li-ion cathode materials. I am especially interested in Mn-based Cation Disordered Rock salt cathode materials. I got my Ph.D. in solid state chemistry and materials chemistry with Efrain E. Rodriguez. I am a big fan of all kinds of scattering, and my favorite equation is the Fourier transform. >< </p>
+                    <p>I love nature and food. I travel all over the world to hike. I enjoy gardening and cooking when I am free. BTW I am a big fan of Pokemon :). </p>
                 </div>
                 <div class="image">
-                    <img src="my photo.jpg" alt="My photo">
+                    <img src="your-image-url.jpg" alt="Tianyu Li">
                 </div>
             </div>
-            <h2>Updates</h2>
-            <p><b>07/01/2024:</b></p> 
-            <p>I created my personal site! I guess it is never too late to do that :P</p>
         </main>
         <footer>
-            <p>&copy; 2024 Tianyu Li. All rights reserved. tianyuli@ucsb.edu</p>
+            &copy; 2024 Tianyu Li. All rights reserved.
         </footer>
     </div>
 </body>
 </html>
-
-
