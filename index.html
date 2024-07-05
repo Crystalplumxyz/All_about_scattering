@@ -8,15 +8,14 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
-        /* Apply color to the mathjax container */
         .mathjax-container {
-            color: white; /* Change color to your preferred color */
+            color: white;
         }
         body {
             font-family: 'myriad-pro', sans-serif;
             margin: 0;
             padding: 0;
-            background-color:  #333;
+            background-color: #333;
         }
         .container {
             max-width: 960px;
@@ -24,35 +23,35 @@
             padding: 20px;
             background-color: #333;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: relative;
             display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
+            flex-direction: column;
+        }
+        .content {
+            display: flex;
             flex-wrap: wrap;
         }
-        .image {
-                
-                flex: 1;
-                max-width: 480px; /* Adjust image width as needed */
-            }
         .text {
             flex: 1;
-            padding-right: 20px; /* Add some space between text and image */
+            padding-right: 20px;
+            color: white;
+        }
+        .image {
+            flex: 1;
+            max-width: 300px;
+            margin-left: 20px;
         }
         img {
-                max-width: 100%;
-                height: auto;
-                display: block;
-            }
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
         .sticky-header {
-            position: -webkit-sticky;
             position: sticky;
             top: 0;
             background-color: #333;
             z-index: 1000;
             width: 100%;
-            box-sizing: border-box;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Added shadow */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
         .header-wrapper {
             max-width: 960px;
@@ -98,16 +97,11 @@
         header h1 {
             font-size: 2em;
             font-weight: normal;
-            color: white;
         }
-        
-        
         main {
             background: #333;
             color: white;
             padding: 20px;
-            padding-top: 30px;
-            
         }
         footer {
             background: #333;
@@ -115,44 +109,33 @@
             text-align: center;
             padding: 0.1em 0;
             border-top: 0.5px solid #ffffff;
-            position: relative;
         }
-
-        /* Media queries for responsive design */
         @media only screen and (max-width: 768px) {
             .header-wrapper {
                 flex-direction: column;
                 align-items: center;
             }
-                        
             .text, .image {
                 max-width: 100%;
                 padding-right: 0;
             }
-
             nav ul {
-                flex-direction: row; /* Ensure menu items are in a row */
+                flex-direction: row;
                 justify-content: center;
                 text-align: center;
             }
-
             nav ul li {
-                margin: 10px; /* Adjust margin for spacing */
+                margin: 10px;
             }
-
             nav ul li a {
-                font-size: 0.85em; /* Decrease font size */
+                font-size: 0.85em;
             }
-
             .icons {
                 margin-top: 10px;
             }
-
             .container {
                 padding: 10px;
             }
-            
-
             header h1 {
                 font-size: 1.5em;
             }
@@ -178,7 +161,7 @@
                 <a href="https://www.linkedin.com/in/tianyu-li-164545165/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://x.com/Tianyu_Crystal" target="_blank" title="Twitter/X"><i class="fa-brands fa-twitter"></i></a>
                 <a href="https://scholar.google.com/citations?user=3i3BkJUAAAAJ&hl=en" title="Google Scholar">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f1f2f3" d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3c33.6 0 64.6 11.1 89.6 29.9c9.1 6.9 17.4 14.7 24.8 23.5c5.6 6.6 10.6 13.8 15 21.3c2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#f1f2f3" d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3c33.6 0 64.6 11.1 89.6 29.9c9.1 6.9 17.4 14.7 24.8 23.5c5.6 6.6 10.6 13.8 15 21.3c2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z"/></svg>
                 </a>
                 <a href="https://www.researchgate.com/profile/Tianyu-Li-25" target="_blank" title="ResearchGate"><i class="fa-brands fa-researchgate"></i></a>
                 <a href="https://orcid.org/0000-0003-0142-7252" target="_blank" title="Ocid"><i class="fa-brands fa-orcid"></i></a>
@@ -186,34 +169,24 @@
         </div>
     </div>
     
-        
     <div class="container">
-        
         <header>
             <h1>Tianyu Li</h1>
-            
             <div class="mathjax-container">
                 \[ F(f) = \int_{-\infty}^{\infty} e^{-j 2 \pi x f} \, dx \]
             </div>
-            
         </header>
         <main>
-            <div class="text">
-                <p>I am currently a postodc researcher in the Clément group and Seshadri gorup UC Santa Barbara. My research involves apllying scattering and NMR techiques to understand the phase transformation behaviors of Li-ion cathode materials. I am especially interested in Mn-based Cation Disordered Rock salt cathode materials. I got my Ph.D in solid state chemistry and materials chemistry with Efrain E. Rdorguez. I am big fan of all kinds of scattering, and my favorite equation is Fourier transform >< </p>
-            
-            
-
-                <p> I love nature and food. I travel all over the worlld to hike. I enjoy gardening and cooking when I am free. BTW I am a big fan of Pokemon :). </p>
+            <div class="content">
+                <div class="text">
+                    <p>I am currently a postodc researcher in the Clément group and Seshadri gorup UC Santa Barbara. My research involves apllying scattering and NMR techiques to understand the phase transformation behaviors of Li-ion cathode materials. I am especially interested in Mn-based Cation Disordered Rock salt cathode materials. I got my Ph.D in solid state chemistry and materials chemistry with Efrain E. Rdorguez. I am big fan of all kinds of scattering, and my favorite equation is Fourier transform >< </p>
+                    <p>I love nature and food. I travel all over the worlld to hike. I enjoy gardening and cooking when I am free. BTW I am a big fan of Pokemon :). </p>
+                </div>
+                <div class="image">
+                    <img src="my photo.jpg" alt="My photo">
+                </div>
             </div>
-
-            
-            <div class="image">
-                <img src="my photo.jpg" >
-            </div>
-                
-
-            
-            <h2>Updtaes</h2>
+            <h2>Updates</h2>
             <p><b>07/01/2024:</b></p> 
             <p>I created my personal site! I guess it is never too late to do that :P</p>
         </main>
@@ -223,4 +196,5 @@
     </div>
 </body>
 </html>
+
 
