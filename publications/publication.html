@@ -6,6 +6,19 @@
     <title>Tianyu Li Academic</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        .collapsible {
+            cursor: pointer;
+            user-select: none;
+            background-color: #f1f1f1;
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        .content {
+            display: none;
+            overflow: hidden;
+        }
         body {
             font-family: 'myriad-pro', sans-serif;
             margin: 0;
@@ -181,6 +194,27 @@
             <p>2.Multiscale characterizations of structural evolution in mesoporous CeO<sub>2</sub>. </a><a href="https://doi.org/10.1039/D4CC02128B">[doi]</a></p>
             
             <p>1.Qin, Q.; Zhang, G.; Chai, Z.; Zhang, J.; Cui, Y.; <b>Li, T.</b>; Zheng, W. Ionic Liquid-Assisted Synthesis of Cu<sub>7</sub>Te<sub>4</sub> Ultrathin Nanosheets with Enhanced Electrocatalytic Activity for Water Oxidation. Nano Energy 2017, 41, 780–787.  </a><a href="https://doi.org/10.1039/D4CC02128B">[doi]</a></p>
+            <div class="collapsible">Click to toggle</div>
+            <div class="content">
+                <p>This is the content that can be toggled open or closed.</p>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const coll = document.querySelectorAll('.collapsible');
+                    for (let i = 0; i < coll.length; i++) {
+                        coll[i].addEventListener('click', function() {
+                            this.classList.toggle('active');
+                            const content = this.nextElementSibling;
+                            if (content.style.display === 'block') {
+                                content.style.display = 'none';
+                            } else {
+                                content.style.display = 'block';
+                            }
+                        });
+                    }
+                });
+            </script>
         </main>
         <footer>
             <p>&copy; 2024 Tianyu Li. All rights reserved. tianyuli@ucsb.edu</p>
