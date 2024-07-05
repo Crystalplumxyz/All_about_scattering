@@ -101,12 +101,17 @@
             }
 
             nav ul {
-                flex-direction: column;
+                flex-direction: row; /* Ensure menu items are in a row */
+                justify-content: center;
                 text-align: center;
             }
 
             nav ul li {
-                margin: 10px 0;
+                margin: 10px; /* Adjust margin for spacing */
+            }
+
+            nav ul li a {
+                font-size: 1em; /* Decrease font size */
             }
 
             .icons {
@@ -172,3 +177,4 @@
     </div>
 </body>
 </html>
+
